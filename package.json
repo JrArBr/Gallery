@@ -1,0 +1,27 @@
+{
+  "name": "galeria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "connect-redis": "^3.1.0",
+    "cookie-session": "^2.0.0-alpha.2",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.14.2",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.2",
+    "multer": "^1.2.1",
+    "pug": "^2.0.0-beta6",
+    "redis": "^2.6.3",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jr Jose Arroliga",
+  "license": "ISC"
+}

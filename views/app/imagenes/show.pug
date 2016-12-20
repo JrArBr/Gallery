@@ -1,0 +1,6 @@
+extends ../../layout.pug
+block contenido
+  div(class="show text-center")
+    h1= img.title
+    img(src="/imagenes/"+img._id+"."+img.documento)
+    p Por #{img.creator.email}

@@ -1,0 +1,20 @@
+doctype html
+html( ng-app="client-module" lang="en")
+  head
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/app.css")
+
+    title Gallery
+    script(src="/socket.io/socket.io.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src="/js/handlebars.js")
+  body()
+    nav(class="black white-text large-padding")
+      ul
+        li
+          a(href="/app") Inicio
+        li
+          a(href="/app/imagenes") Mi Galeria
+        li
+          a(href="/app/imagenes/new") Subir Img
+    block contenido

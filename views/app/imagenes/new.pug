@@ -1,0 +1,17 @@
+extends ../../layout.pug
+block contenido
+  div(class="col-md-6 center-block remove-float big-top-space" )
+    h1 Subir imagen
+    form(action="/app/imagenes", method="POST", enctype="multipart/form-data")
+      div(class='form-group')
+        label(for="title") Titulo
+        input(type="text", name="title", autofocus, placeholder="Nombre de la imagen", id="title"
+        class="form-control")
+      div(class='form-group')
+        label(for="archivo") Archivo
+        input(type="file", name="archivo", id="archivo"
+        class="form-control")
+
+      div(class="row")
+        div(class="col-md-6")
+          input(type="submit", value="Subir", class="btn btn-info")

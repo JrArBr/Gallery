@@ -1,0 +1,12 @@
+extends ../../layout.pug
+block contenido
+  div(class="col-md-6 center-block remove-float big-top-space" )
+    h1 Subir imagen
+    form(action="/app/imagenes/"+img._id+"?_method=PUT", method="POST")
+      div(class='form-group')
+        label(for="title") Titulo
+        input(type="text", name="title", autofocus, value = ""+img.title+"", placeholder="Nombre de la imagen", id="title"
+        class="form-control")
+      div(class="row")
+        div(class="col-md-6")
+          input(type="submit", value="Editar", class="btn btn-success")

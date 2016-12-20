@@ -1,0 +1,15 @@
+extends ../layout.pug
+block contenido
+    div(id="all-images" class="text-center")
+        h1 Hola #{user.email}
+        for img in imgs
+          div(class="img-container text-center")
+            a(href="/app/imagenes/"+img._id)
+                div(class="wrapper")
+                    img(src="/imagenes/"+img._id+"."+img.documento)
+    script(type="text/x-handlebars-template" id="img-template")
+        div(class="img-container text-center")
+          a(href="/app/imagenes/{{_id}}")
+              img(src="/imagenes/{{_id}}.{{documento}}")
+
+    script(src="/js/client.js")
